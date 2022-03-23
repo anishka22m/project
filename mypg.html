@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <link rel="stylesheet" href="s.css">
+        <style>
+            .collapsible {
+              background-color: #836953;
+              color: rgb(218, 253, 185);
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+            }
+            
+            .active, .collapsible:hover {
+              background-color: #555;
+            }
+            
+            .collapsible:after {
+              content: '\002B';
+              color: rgb(250, 219, 151);
+              font-weight: bold;
+              float: right;
+              margin-left: 5px;
+            }
+            
+            .active:after {
+              content: "\2212";
+            }
+            
+            .content {
+              padding: 0 18px;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+              background-color: #f1f1f1;
+            }
+            </style>
+    </head>
+    <body style="background-color:#FDFD96">
+        <div class="container">
+            <div class="row h-50">
+            <div class="col-sm">
+                <img src="ti.png" height="200px" class="float-left">
+            </div>
+            <div class="col-sm">
+                <div class="b2">
+                <h1 class="title" align="center">Titanic</h1> <br>
+                <center><h2 class="glyphicon glyphicon-star">4/5 Nests</h2></center>
+                <br> <br>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="b2">
+                    <h2 align="center" class="qtitle">Quizes</h2>
+                <a href="https://www.buzzfeed.com/hsmtmtslover123/only-people-that-have-seen-titanic-more-than-5-tim-8jkwk2phpn" target="_blank"><h4 align="center" class="qfont">Trivia</h4></a>
+                <a href="https://www.buzzfeed.com/sydrobinson1/titanic-knowledge-quiz" target="_blank"><h4 align="center" class="qfont">Knowledge</h4></a>
+                <a href="https://www.buzzfeed.com/sydrobinson1/titanic-knowledge-quiz" target="_blank"><h4 align="center" class="qfont">Which Character are you?</h4></a> 
+            </div>
+            </div>
+            </div>
+        <br>
+        <div class="row h-50">
+            <button class="collapsible"><strong>SUMMARY</strong></button>
+            <div class="content">
+                <p class="par">Deep on the bottom of the sea, some 3,800 metres below the surface of the freezing Atlantic Ocean, lies the wreckage of a ship: the unmistakable carcass of the Titanic, once man's grandest mechanical achievement, now stripped of its former glory. Almost one long century later, intrigued by Titanic's hidden riches, the modern treasure hunter, Brock Lovett, and his well-equipped technical crew, find themselves in the middle of the ocean, digging for answers for the past three years; nevertheless, without any success. But, when centenarian Rose Calvert, one of the few survivors of the Titanic, learns about this ambitious crusade, she decides to unfold her incredible and utterly tragic story; one that intertwines the extraordinary journey of the exquisite, deep-blue Heart-of-the-Ocean diamond of King Louis XVI, with the unlikely romance of Rose and the young bohemian vagabond, Jack Dawson. Now, an emotional trip down memory lane awaits. Can the mistakes of the past teach a lesson in humility to paupers and royalty alike?</p>
+            </div>
+            <button class="collapsible"><strong>REVIEWS</strong></button>
+            <div class="content">
+            <p class="par">
+                Tale strikes unsinkable balance
+                James Cameron's three-hour Titanic (4 stars out of four) can be picked at but, unlike its subject, not broken apart. To those seeking the full movie experience and the return of showmanship, welcome to one-stop Christmas shopping.
+                
+                With its every neon frame reflecting a reported $200 million budget, Titanic nearly exclusively recalls the reserved-seat "event" attractions of the mid-1950s to mid-'60s, that long-gone era when a thousand extras stood up and shouted, "I am Spartacus." And on a romantic level, it is Spartacus, given writer/director Cameron's decision to employ advanced technology and 80 minutes of disaster footage in service of an old-fashioned central love story.</p>
+            </div>
+            <button class="collapsible"><strong>SUGGESTIONS</strong></button>
+            <div class="content">
+            <img src="j.jpg" alt="jumanji" height="200px"> &nbsp;&nbsp;&nbsp;
+            <img src="b.jpg" alt="batman" height="200px"> &nbsp;&nbsp;&nbsp;
+            <img src="m.jpg" alt="men in black" height="200px"> &nbsp;&nbsp;&nbsp;
+            </div>
+            
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+            </script>
+            
+        </div>
+    </div>
+            
+
+    </body>
+    </html>     

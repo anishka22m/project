@@ -1,0 +1,40 @@
+.title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:lightcoral;
+    font-style: oblique;
+}
+a:link{
+    color: crimson;
+}
+a:visited{
+    color: hotpink;
+}
+a:hover{
+    color:black;
+}
+.par{
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dv {
+    width: 220px;
+    padding: 5px;
+    margin: 0;
+    background-color: antiquewhite;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;  }
+ .qfont{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+ }
+ .b2{
+    width: 220px;
+    padding: 5px;
+    margin: 0;
+    box-shadow: rgb(234, 221, 202)  -5px 5px, rgba(205, 127, 50) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    background-color:lightgoldenrodyellow;
+  }
+.qtitle{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: plum;
+    font-weight: 700;
+}
